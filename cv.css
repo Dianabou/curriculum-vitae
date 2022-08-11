@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #e9e974;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+img {
+  max-width: 180px;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.imagen {
+    float: left;
+    width: 20%;
+    height: 300px; 
+    background: #dede47;
+    padding: 35px;
+}
+  
+.personales {
+    float: left;
+    padding: 20px;
+    width: 40%;
+    background-color: #fafab8;
+    height: 300px; 
+}
+
+.presentacion {
+    float:left;
+    padding: 20px;
+    width: 40%;
+    background-color:  #cccc00;
+    color: white;
+    height: 300px; 
+}
+
+.formacion {
+    float: left;
+    background-color:  #fcfcc2;
+    padding: 20px;
+    width: 50%;
+    height: 500px;
+}
+
+.experiencia {
+    float: left;
+    padding: 20px;
+    width: 50%;
+    height: 500px;
+    background-color: #e9e974;
+}
+footer {
+  background-color: #cccc00;
+  text-align: center;
+  padding: 20px;
+}
+@media only screen and (max-width:800px) {
+  .imagen {
+    width: 50%;
+    padding: 20px;
+    font-size: 2vw;
+    overflow: auto;
+    height: 300px;
+  }
+  .personales {
+    width: 50%;
+    height: 300px;
+    padding: 20px;
+    font-size: 2vw;
+  }
+  .presentacion, .formacion, .experiencia {
+    width: 100%;
+    height: auto;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width:500px) {
+  .imagen {
+    visibility:unset;
+  } 
+  .personales, .presentacion, .formacion, .experiencia {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    font-size: 2vw;
+  }
+}
